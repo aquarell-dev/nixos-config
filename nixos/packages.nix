@@ -38,7 +38,6 @@
 		wofi
 		hyprpicker
 		cliphist
-		hyperctl
 		
 		# Other 
 		home-manager
