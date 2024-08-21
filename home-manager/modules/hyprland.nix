@@ -39,8 +39,8 @@
       general = {
         gaps_in = 5;
         gaps_out = 20;
-        border_size = 3;
-        "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+        border_size = 1;
+        "col.active_border" = "rgba(ffffffee)";
         "col.inactive_border" = "rgba(595959aa)";
 
         layout = "dwindle";
@@ -101,11 +101,6 @@
         disable_hyprland_logo = true;
       };
 
-      windowrule = [
-        "float, ^(imv)$"
-        "float, ^(mpv)$"
-      ];
-
       exec-once = [
         "waybar"
         "wl-paste --type text --watch cliphist store"
@@ -113,15 +108,12 @@
       ];
 
       bind = [
-        "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
-
         "$mainMod, Return, exec, alacritty"
         "$mainMod, Q, killactive,"
         "$mainMod, M, exit,"
         "$mainMod, E, exec, dolphin"
         "$mainMod, F, togglefloating,"
         "$mainMod, D, exec, wofi --show drun"
-        "$mainMod, P, pseudo, # dwindle"
         "$mainMod, J, togglesplit, # dwindle"
 
         # Move focus with mainMod + arrow keys
@@ -135,12 +127,6 @@
         "$mainMod SHIFT, right, swapwindow, r"
         "$mainMod SHIFT, up,    swapwindow, u"
         "$mainMod SHIFT, down,  swapwindow, d"
-
-        # Window resizing                     X  Y
-        "$mainMod CTRL, left,  resizeactive, -60 0"
-        "$mainMod CTRL, right, resizeactive,  60 0"
-        "$mainMod CTRL, up,    resizeactive,  0 -60"
-        "$mainMod CTRL, down,  resizeactive,  0  60"
 
         # Switch workspaces with mainMod + [0-9]
         "$mainMod, 1, workspace, 1"
