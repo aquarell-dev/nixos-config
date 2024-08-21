@@ -48,7 +48,7 @@
 
     "pulseaudio" = {
         # scroll-step = 1; # %, can be a float
-        reverse-scrolling = 1;
+        reverse-scrolling = 0;
         format = "{volume}% {icon} {format_source}";
         format-bluetooth = "{volume}% {icon} {format_source}";
         format-bluetooth-muted = " {icon} {format_source}";
