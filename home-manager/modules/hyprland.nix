@@ -44,8 +44,6 @@
         "col.inactive_border" = "rgba(595959aa)";
 
         layout = "dwindle";
-
-        no_cursor_warps = false;
       };
 
       decoration = {
