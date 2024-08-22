@@ -21,6 +21,8 @@
 		micro
 		vim
 		vscode
+		jetbrains.webstorm
+		jetbrains.pycharm-professional
 
 		# Langauges & Compilers
 		python312
