@@ -5,16 +5,30 @@
       mainBar = {
         layer = "top";
         position = "top";
-        margin = "9 13 -10 18";
+        margin = "9 18 -10 18";
 
         modules-left = ["hyprland/workspaces" "tray" "hyprland/window"];
-        modules-right = ["pulseaudio" "backlight" "battery" "clock"];
+        modules-right = ["pulseaudio" "network" "bluetooth" "battery" "clock"];
 
         "hyprland/workspaces" = {
           disable-scroll = true;
           persistent-workspaces = {
            "*" = 5;
           };
+        };
+
+        "network" = {
+        	interface = "wlp1s0";
+        	format-wifi = " {signalStrength}%";
+        	tooltip-format-wifi = "{essid} ({signalStrength}%)";
+        	format-disonnected = "dqwe";
+        	tooltip-format-disconnected = "No WI-FI connection";	
+        };
+
+        bluetooth = {
+        	format =  " {status}";
+        	format-disabled = "";
+        	format-connected = " {num_connections} connected";
         };
 
         "hyprland/window" = {
@@ -52,13 +66,6 @@
 	        };
 	        on-click = "pavucontrol";
 	        min-length = 13;
-	    };
-
-	    "backlight" = {
-	        device = "intel_backlight";
-	        format = "{percent}% {icon}";
-	        format-icons = [""];
-	        min-length = 7;
 	    };
 
 	    battery = {
@@ -136,6 +143,13 @@
 		    border-radius: inherit;
 		}
 
+		#window {
+			background: #383c4a;
+			color: #fff;
+			padding: 0 8px;
+			border-radius: 10px;
+		}
+
 		#language {
 		    padding-left: 16px;
 		    padding-right: 8px;
@@ -169,14 +183,22 @@
 		    color: #2a5c45;
 		}
 
-		#backlight {
-		    margin-right: 8px;
-		    padding-left: 16px;
-		    padding-right: 16px;
-		    border-radius: 10px;
-		    transition: none;
-		    color: #ffffff;
-		    background: #383c4a;
+		#network {
+			color: #ffffff;
+			background: #383c4a;
+			padding: 0 16px;
+			border-radius: 10px 0 0 10px;
+			padding-left: 16px;
+			padding-right: 8px;
+		}
+
+		#bluetooth {
+			color: #ffffff;
+			background: #383c4a;
+			padding-right: 16px;
+			padding-left: 8px;
+			border-radius: 0 10px 10px 0;
+			margin-right: 8px;
 		}
 
 		#battery {
@@ -211,11 +233,12 @@
 
 		#tray {
 		    padding-left: 8px;
-		    padding-right: 18px;
+		    padding-right: 8px;
 		    border-radius: 10px;
 		    transition: none;
 		    color: #ffffff;
 		    background: #383c4a;
+		    margin-right: 8px;
 		}
 
 		@keyframes blink {
