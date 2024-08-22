@@ -10,5 +10,6 @@
     ./virtmanager.nix
     ./trim.nix
     ./bluetooth.nix
+    ./docker.nix
   ];
 }
