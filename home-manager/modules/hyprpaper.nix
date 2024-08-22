@@ -3,12 +3,12 @@
 		enable = true;
 
 		settings = {
-			ipc = "on";
+			ipc = "off";
 			splash = true;
 
-			preload = ["$HOME/nix/assets/wallpapers/wallpaper.png"];
+			preload = ["$HOME/nix/assets/wallpapers/wallpaper.jpg"];
 
-			wallpaper = ["eDP-1,$HOME/nix/assets/wallpapers/wallpaper.png"];
+			wallpaper = ["eDP-1,$HOME/nix/assets/wallpapers/wallpaper.jpg"];
 		};
 	};
 }
