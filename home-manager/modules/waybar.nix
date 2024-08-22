@@ -7,9 +7,8 @@
         position = "top";
         margin = "9 13 -10 18";
 
-        modules-left = ["hyprland/workspaces" "hyprland/language" "keyboard-state" "hyprland/submap"];
-        modules-center = ["clock" "custom/weather"];
-        modules-right = ["pulseaudio" "custom/mem" "cpu" "backlight" "battery" "tray"];
+        modules-left = ["hyprland/workspaces" "hyprland/window"];
+        modules-right = ["pulseaudio" "backlight" "battery" "tray"];
 
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -22,20 +21,8 @@
 	      tooltip = false;
     };
 
-    "keyboard-state" = {
-        #numlock = true;
-        capslock = true;
-        format = "{icon} ";
-        format-icons = {
-            locked = " ";
-            unlocked = "";
-        };
-    };
-
     "clock" = {
-        # timezone = "America/New_York";
-        tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        format = "{:%a; %d %b, %I:%M %p}";
+        format = "{:%H:%M %d/%m/%y}";
     };
 
     "custom/weather" = {
