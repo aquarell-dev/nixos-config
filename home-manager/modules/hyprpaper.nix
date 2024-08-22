@@ -8,7 +8,7 @@
 
 			preload = ["$HOME/nix/assets/wallpapers/wallpaper.png"];
 
-			wallpaper = ["DP-1,$HOME/nix/assets/wallpapers/wallpaper.png"];
+			wallpaper = ["eDP-1,$HOME/nix/assets/wallpapers/wallpaper.png"];
 		};
 	};
 }
