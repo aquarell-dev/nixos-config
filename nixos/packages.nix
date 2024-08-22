@@ -28,10 +28,10 @@
 		go
 		nodejs_22
 
-		# Sound & Screensharing
+		# Sound
 		pipewire
 		wireplumber
-		xwayland
+		pavucontrol
 
 		# Notifications
 		dunst
@@ -44,6 +44,7 @@
 		wofi
 		hyprpicker
 		cliphist
+		xwayland
 		
 		# Other 
 		home-manager

@@ -9,5 +9,6 @@
     ./nm.nix
     ./virtmanager.nix
     ./trim.nix
+    ./bluetooth.nix
   ];
 }
