@@ -21,14 +21,16 @@
         	interface = "wlp1s0";
         	format-wifi = " {signalStrength}%";
         	tooltip-format-wifi = "{essid} ({signalStrength}%)";
-        	format-disonnected = "dqwe";
-        	tooltip-format-disconnected = "No WI-FI connection";	
+        	format-disonnected = "";
+        	tooltip-format-disconnected = "No WI-FI connection";
+        	on-click = "nmtui";	
         };
 
         bluetooth = {
         	format =  " {status}";
-        	format-disabled = "";
-        	format-connected = " {num_connections} connected";
+        	format-disabled = " disabled";
+        	format-connected = " {num_connections}";
+        	on-click = "blueman-manager";
         };
 
         "hyprland/window" = {
@@ -50,7 +52,7 @@
 	        # scroll-step = 1; # %, can be a float
 	        reverse-scrolling = 0;
 	        format = "{volume}% {icon} {format_source}";
-	        format-bluetooth = "{volume}% {icon} {format_source}";
+	        format-bluetooth = "{volume}% {icon} {format_source}";
 	        format-bluetooth-muted = " {icon} {format_source}";
 	        format-muted = " {format_source}";
 	        format-source = "{volume}% ";
@@ -82,8 +84,8 @@
 	    };
 
 	    tray = {
-	        icon-size = 16;
-	        spacing = 0;
+	        icon-size = 18;
+	        spacing = 4;
 	    };
       };
     };
