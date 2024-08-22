@@ -7,5 +7,6 @@
     ./qt.nix
     ./hyprland.nix
     ./waybar.nix
+    ./hyprpaper.nix
   ];
 }
