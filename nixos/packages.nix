@@ -32,7 +32,8 @@
 		pipewire
 		wireplumber
 		pavucontrol
-
+		blueman
+		
 		# Notifications
 		dunst
 
