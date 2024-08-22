@@ -24,6 +24,7 @@
 
 		# Langauges & Compilers
 		python312
+		python312Packages.pip
 		go
 		nodejs_22
 
