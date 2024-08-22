@@ -3,8 +3,8 @@
 		enable = true;
 
 		settings = {
-			ipc = on;
-			splash = on;
+			ipc = "on";
+			splash = true;
 
 			preload = ["$HOME/nix/assets/wallpapers/wallpaper.png"];
 
