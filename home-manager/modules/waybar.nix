@@ -8,6 +8,7 @@
         margin = "9 13 -10 18";
 
         modules-left = ["hyprland/workspaces" "hyprland/window"];
+        modules-center = ["clock" "weather"];
         modules-right = ["pulseaudio" "backlight" "battery" "tray"];
 
         "hyprland/workspaces" = {
