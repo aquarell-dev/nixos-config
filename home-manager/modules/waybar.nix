@@ -18,7 +18,7 @@
         };
 
         "hyprland/window" = {
-          	format = {initialTitle};
+          	format = "{initialTitle}";
         };
 
 	    "hyprland/language" = {
