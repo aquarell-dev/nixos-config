@@ -22,6 +22,11 @@
 		vim
 		vscode
 
+		# Langauges & Compilers
+		python312
+		go
+		nodejs_22
+
 		# Sound & Screensharing
 		pipewire
 		wireplumber
