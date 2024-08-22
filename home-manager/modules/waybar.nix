@@ -7,8 +7,8 @@
         position = "top";
         margin = "9 13 -10 18";
 
-        modules-left = ["hyprland/workspaces" "hyprland/window"];
-        modules-right = ["pulseaudio" "backlight" "battery" "clock" "tray"];
+        modules-left = ["hyprland/workspaces" "tray" "hyprland/window"];
+        modules-right = ["pulseaudio" "backlight" "battery" "clock"];
 
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -78,7 +78,6 @@
 	        icon-size = 16;
 	        spacing = 0;
 	    };
-
       };
     };
   
@@ -211,8 +210,8 @@
 		}
 
 		#tray {
-		    padding-left: 16px;
-		    padding-right: 16px;
+		    padding-left: 8px;
+		    padding-right: 18px;
 		    border-radius: 10px;
 		    transition: none;
 		    color: #ffffff;
